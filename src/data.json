@@ -1,0 +1,85 @@
+{
+  "skills1": [
+    { "name": "flutter", "level": 60 },
+    { "name": "React", "level": 60 },
+    { "name": "bootstrap", "level": 70 },
+    { "name": "python", "level": 60 },
+    { "name": "kotlin", "level": 60 },
+    { "name": "JETPACT COMPOSE", "level": 70 }
+  ],
+  "skills2": [
+    { "name": "SEO", "level": 50 },
+    { "name": "WordPress", "level": 70 },
+    { "name": "JavaScript", "level": 80 },
+    { "name": "HTLM", "level": 50 },
+    { "name": "CSS", "level": 70 },
+    { "name": "PHP", "level": 80 }
+  ],
+  "services1": [
+    {
+      "title": "Développement Web",
+      "description": "CRÉATION DE SITES WEB : site vitrine, événementiel, corporate",
+      "icon": "FaCode"
+    },
+    {
+      "title": "Conception Graphique",
+      "description": "Logos, newsletters, CV",
+      "icon": "FaPaintBrush"
+    },
+    {
+      "title": "SEO Marketing",
+      "description": "Amélioration du référencement naturel pour plus de visibilité dans les résultats des moteurs",
+      "icon": "FaBullhorn"
+    }
+  ],
+  "services2": [
+    {
+      "title": "Développement Mobile",
+      "description": "CRÉATION DE SITES WEB : site vitrine, événementiel, git",
+      "icon": "FaCode"
+    },
+    {
+      "title": "Conception DEVOps",
+      "description": "Logos, newsletters, CV",
+      "icon": "FaPaintBrush"
+    },
+    {
+      "title": "CI/C",
+      "description": "Amélioration du référencement naturel pour plus de visibilité dans les résultats des moteurs",
+      "icon": "FaBullhorn"
+    }
+  ],
+   
+  "eventsLeft1" : [
+    {
+      "name": "Licence1",
+     "contenu": "Informatique, développement application web mobile et Devops - Université virtuelle Burkina faso",
+     "date": "2018-2021"
+    } 
+  ],
+  
+  
+ "eventsRight2": [
+  {
+    "name": "Licence3 ",
+    "contenu":"Informatique, développement application web mobile et Devops - Université virtuelle Burkina faso",
+    "date": "2024-2025"
+  }
+] ,
+"eventsLeft3" : [
+  {
+    "name": "Licence1",
+   "contenu": "Baccalauréat D, 2018-2021",
+   "date": "2018-2021"
+  } 
+],
+
+
+"eventsRight4": [
+{
+  "name": "Licence 2",
+  "contenu":"Informatique, développement application web mobile et Devops - Université virtuelle Burkina faso",
+  "date": "2024-2025"
+}
+] 
+}

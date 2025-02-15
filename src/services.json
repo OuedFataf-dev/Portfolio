@@ -1,0 +1,38 @@
+ {  
+"services1": [
+    {
+      "title": "Développement Web",
+      "description": "CRÉATION DE SITES WEB : site vitrine, événementiel, corporate",
+      "icon": "FaCode"
+    },
+    {
+      "title": "Conception Graphique",
+      "description": "Logos, newsletters, CV",
+      "icon": "FaPaintBrush"
+    },
+    {
+      "title": "SEO Marketing",
+      "description": "Amélioration du référencement naturel pour plus de visibilité dans les résultats des moteurs",
+      "icon": "FaBullhorn"
+    }
+  ],
+  "services2": [
+    {
+      "title": "Développement Mobile",
+      "description": "CRÉATION DE SITES WEB : site vitrine, événementiel, git",
+      "icon": "FaCode"
+    },
+    {
+      "title": "Conception DEVOps",
+      "description": "Logos, newsletters, CV",
+      "icon": "FaPaintBrush"
+    },
+    {
+      "title": "CI/C",
+      "description": "Amélioration du référencement naturel pour plus de visibilité dans les résultats des moteurs",
+      "icon": "FaBullhorn"
+    }
+]
+
+
+}
