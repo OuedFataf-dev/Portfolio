@@ -47,7 +47,7 @@ function App() {
         <h2>
           <DynamicText />
         </h2>
-        <p className="italic text-white text-3xl p-8">
+        <p className="italic text-white text-2xl  text-2xl p-8">
           Développeur web et mobile passionné, je suis spécialisé <br />
           dans la conception et le développement d'applications web <br />
           et mobiles personnalisées. Maîtrisant un large éventail de <br />
