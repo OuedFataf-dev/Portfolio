@@ -12,6 +12,8 @@ import Timeline from './Component/Trait'
 import Portfolio from './Component/Mon_portfolio';
 import mobile from './assets/mobile.png'
 import mobile2 from './assets/mobil.png'
+import "aos/dist/aos.css";
+
 
 
 //import AnimatedCard from './Component/ContactForm';
