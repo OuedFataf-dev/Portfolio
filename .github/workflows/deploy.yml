@@ -1,0 +1,38 @@
+name: Deploy to Netlify
+
+on:
+  push:
+    branches:
+      - master # Remplace par la branche que tu veux déployer
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Cloner le dépôt
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Installer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18  # Assure-toi que c'est la bonne version pour ton projet
+
+      - name: 📦 Installer les dépendances
+        run: npm install
+
+      - name: 🏗️ Construire le projet
+        run: npm run build
+
+      - name: 🚀 Déployer sur Netlify
+        uses: nwtgck/actions-netlify@v2
+        with:
+          publish-dir: "./build"  # Répertoire de publication après la construction du projet
+          branch: main  # Utilisation de 'branch' pour spécifier la branche de déploiement
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Déploiement automatique via GitHub Actions"
+          enable-pull-request-comment: false
+          enable-commit-comment: false
+          alias: "latest"  # Alias pour ton déploiement sur Netlify
+          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
