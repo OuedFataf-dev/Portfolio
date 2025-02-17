@@ -2,18 +2,18 @@ import React, { useState, useEffect } from "react";
 
 function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // État pour gérer l'ouverture du menu
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (id, event) => {
     event.preventDefault();
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-      setActiveSection(id); // Mettre à jour la section active
+      setActiveSection(id);
     }
   };
 
-  // Ajouter un écouteur d'événement pour détecter le défilement
+  // Écouteur pour détecter le défilement
   useEffect(() => {
     const handleScroll = () => {
       const sections = ["home", "competences", "services", "portfolio", "contact"];
@@ -43,7 +43,7 @@ function Navbar() {
 
         {/* Menu hamburger pour mobile */}
         <button
-          className="inline-flex items-center justify-center w-10 h-10 text-gray-500 rounded-lg md:hidden"
+          className="inline-flex items-center justify-center w-10 h-10 text-gray-500 rounded-lg md:hidden absolute right-4 top-4"
           onClick={() => setIsMenuOpen(!isMenuOpen)} // Toggle du menu
         >
           <span className="sr-only">Open menu</span>
@@ -83,7 +83,7 @@ function Navbar() {
           )}
         </button>
 
-        {/* Menu de navigation (en version desktop et mobile) */}
+        {/* Menu de navigation (en version mobile) */}
         <div className={`${isMenuOpen ? "block" : "hidden"} w-full md:block md:w-auto`}>
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
