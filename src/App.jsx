@@ -13,7 +13,8 @@ import Portfolio from './Component/Mon_portfolio';
 import mobile from './assets/mobile.png'
 import mobile2 from './assets/mobil.png'
 import "aos/dist/aos.css";
-
+import  './ANimation'
+import RotatingGallery from './ANimation';
 
 
 //import AnimatedCard from './Component/ContactForm';
@@ -47,7 +48,7 @@ function App() {
         <h2>
           <DynamicText />
         </h2>
-        <p className="italic text-white text-2xl  text-2xl p-8">
+        <p className="text-2xl  italic text-white  text-2xl p-8">
           Développeur web et mobile passionné, je suis spécialisé <br />
           dans la conception et le développement d'applications web <br />
           et mobiles personnalisées. Maîtrisant un large éventail de <br />
@@ -59,19 +60,19 @@ function App() {
       <div id="competences">
         <div>
           <div>   </div>
-          <div className="text-center p-20 italic text-6xl font-bold">COMPETENCES</div> 
+          <div className="text-5xl text-center font-bold italic text-stroke mt-10">COMPÉTENCES</div> 
           <div className="flex flex-col md:flex-row justify-center items-center w-full max-w-5xl gap-12 p-12 mt-10 mx-auto">
             <SkillCard title="Mes Compétences" skills={skillsData.skills1 || []} />
             <SkillCard title="Compétences Web" skills={skillsData.skills2 || []} />
           </div>
         </div>
       </div>
-      <div id="services" className="text-center p-4 italic text-6xl font-bold">SERVICES</div>
+      <div id="services" className="text-5xl text-center font-bold italic text-stroke mt-10">SERVICES</div>
       <div>
         <Services services={ServiceData.services1 || []} />
         <Services services={ServiceData.services2 || []} />
       </div>
-      <div id="cursus" className="text-center p-20 italic text-6xl font-bold">CURSUS</div>
+      <div id="cursus" className="text-5xl text-center font-bold italic text-stroke mt-10">CURSUS</div>
       <div className="flex flex-wrap md:flex-nowrap items-center justify-center px-10 gap-6">
   {/* Première colonne */}
   <div className="w-full flex flex-col md:flex-row justify-between ">
@@ -114,7 +115,7 @@ function App() {
   </div>
 </div>
 
-      <div id="portfolio" className="text-center p-4 italic text-6xl font-bold">Mon Portfolio</div>
+      <div id="portfolio" className="text-4xl text-center font-bold italic text-stroke mt-10">Mon Portfolio</div>
       <div className='flex flex-col md:flex-row justify-center items-center w-full max-w-6xl gap-12 p-12 mx-auto'>
       <Portfolio data={Img1} />
       <Portfolio data={Img2} />
@@ -124,17 +125,20 @@ function App() {
 
 
        
-      <div id="contact" className="text-center p-4 italic text-6xl font-bold">Contactez-moi</div>
+      <div id="contact" className="text-5xl text-center font-bold italic text-stroke mb-10">Contactez-moi</div>
       <div className=' flex text-center justify-center'>
         <ContactForm/>
       </div>
       <footer className="footer footer-center bg-base-300 text-base-content p-4">
         <aside>
           <p className="text-center italic">
-            Copyright © {new Date().getFullYear()} - Créé par Fataf T | Tous les droits réservés
+            Copyright © {new Date().getFullYear()} - Créé par Fataf  | Tous les droits réservés
           </p>
         </aside>
       </footer>
+
+     
+
     </>
   );
 }
