@@ -72,28 +72,48 @@ function App() {
         <Services services={ServiceData.services2 || []} />
       </div>
       <div id="cursus" className="text-center p-20 italic text-6xl font-bold">CURSUS</div>
-      <div className="flex items-center justify-between px-10">
-        <div className="w-1/3 flex justify-start mb-20 p-1 ">
-          <Experience data={CursusData.eventsLeft1 || []} />
-        </div>
-        <div className="w-1/3 flex justify-center ">
-          <Timeline />
-        </div>
-        <div className="w-1/3 flex justify-end mt-10">
-          <Experience data={CursusData.eventsRight2 || []} />
-        </div>
-      </div>
-      <div className="flex items-center justify-between px-10">
-        <div className="w-1/3 flex justify-start mb-20 p-4 max-w-6xl  ">
-          <Experience data={CursusData.eventsLeft3 || []} />
-        </div>
-        <div className="w-1/3 flex justify-center ">
-          <Timeline />
-        </div>
-        <div className="w-1/3 flex justify-end mt-10">
-          <Experience data={CursusData.eventsRight4 || []} />
-        </div>
-      </div>
+      <div className="flex flex-wrap md:flex-nowrap items-center justify-center px-10 gap-6">
+  {/* Première colonne */}
+  <div className="w-full flex flex-col md:flex-row justify-between ">
+  {/* Colonne de gauche */}
+  <div className="w-full md:w-1/3 flex justify-start">
+    <div className="w-full max-w-full"> {/* 🔹 Augmentation de la largeur */}
+      <Experience data={CursusData.eventsLeft1 || []} />
+    </div>
+  </div>
+
+  {/* Timeline au centre (masqué sur mobile) */}
+  <div className="hidden md:flex w-full md:w-1/3 justify-center p-5">
+    <Timeline />
+  </div>
+
+  {/* Colonne de droite */}
+  <div className="w-full md:w-1/3 flex justify-end mt-10 p-5">
+    <div className="w-full max-w-2xl"> {/* 🔹 Augmentation de la largeur */}
+      <Experience data={CursusData.eventsRight2 || []} />
+    </div>
+  </div>
+</div>
+
+ 
+</div>
+
+<div className="flex flex-wrap md:flex-nowrap items-center justify-center px-10 gap-6"> 
+  {/* Colonne de gauche */}
+  <div className="w-full md:w-1/3 flex justify-start mb-10 p-5">
+    <Experience data={CursusData.eventsLeft3 || []} />
+  </div>
+{/* Timeline au centre */}
+<div className="hidden md:flex w-full md:w-1/3 justify-center p-5">
+  <Timeline />
+</div>
+
+  {/* Colonne de droite */}
+  <div className="w-full md:w-1/3 flex justify-end mt-10 p-5">
+    <Experience data={CursusData.eventsRight4 || []} />
+  </div>
+</div>
+
       <div id="portfolio" className="text-center p-4 italic text-6xl font-bold">Mon Portfolio</div>
       <div className='flex flex-col md:flex-row justify-center items-center w-full max-w-6xl gap-12 p-12 mx-auto'>
       <Portfolio data={Img1} />
