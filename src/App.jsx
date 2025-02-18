@@ -1,3 +1,4 @@
+
 import './App.css';
 import Navbar from './Component/navbar';
 import DynamicText from './DynamicText';
@@ -77,8 +78,8 @@ function App() {
   {/* Première colonne */}
   <div className="w-full flex flex-col md:flex-row justify-between ">
   {/* Colonne de gauche */}
-  <div className="w-full md:w-1/3 flex justify-start">
-    <div className="w-full max-w-full"> {/* 🔹 Augmentation de la largeur */}
+  <div className="w-full md:w-1/3 flex justify-start ">
+    <div className="w-full max-w-full gap-100"> {/* 🔹 Augmentation de la largeur */}
       <Experience data={CursusData.eventsLeft1 || []} />
     </div>
   </div>
@@ -89,8 +90,8 @@ function App() {
   </div>
 
   {/* Colonne de droite */}
-  <div className="w-full md:w-1/3 flex justify-end mt-10 p-5">
-    <div className="w-full max-w-2xl"> {/* 🔹 Augmentation de la largeur */}
+  <div className="w-full md:w-1/3 flex justify-end mt-10 p-5 m-10">
+    <div className="w-full max-w-20xl"> {/* 🔹 Augmentation de la largeur */}
       <Experience data={CursusData.eventsRight2 || []} />
     </div>
   </div>
