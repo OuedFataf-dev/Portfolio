@@ -13,8 +13,11 @@ import Timeline from './Component/Trait'
 import Portfolio from './Component/Mon_portfolio';
 import mobile from './assets/mobile.png'
 import mobile2 from './assets/mobil.png'
+import KOLT from './assets/KOLTIN.jpeg'
+import KOLTin from './assets/KOTLI.jpeg'
 import "aos/dist/aos.css";
 import  './ANimation'
+
 import RotatingGallery from './ANimation';
 
 
@@ -36,9 +39,17 @@ function App() {
   
   const Img3=[
     {
-       image:'image.png'
+       image:KOLT
     }
+    
   ]  
+
+
+  const Img4=[
+    {
+       image:KOLTin
+    }
+  ]
   return (
     <>
       <Navbar />
@@ -120,6 +131,10 @@ function App() {
       <div className='flex flex-col md:flex-row justify-center items-center w-full max-w-6xl gap-12 p-12 mx-auto'>
       <Portfolio data={Img1} />
       <Portfolio data={Img2} />
+      </div>
+      <div className='flex flex-col md:flex-row justify-center items-center w-full max-w-6xl gap-12 p-12 mx-auto'>
+      <Portfolio data={Img3} />
+      <Portfolio data={Img4} />
       </div>
              
 
