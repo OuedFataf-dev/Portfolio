@@ -8,10 +8,10 @@
     { "name": "JETPACT COMPOSE", "level": 70 }
   ],
   "skills2": [
-    { "name": "SEO", "level": 50 },
-    { "name": "WordPress", "level": 70 },
-    { "name": "JavaScript", "level": 80 },
-    { "name": "HTLM", "level": 50 },
+    { "name": "tailwind css", "level": 50 },
+    { "name": "Node js", "level": 70 },
+    { "name": "JavaScript", "level":40  },
+    { "name": "HTML", "level": 50 },
     { "name": "CSS", "level": 70 },
     { "name": "PHP", "level": 80 }
   ],
@@ -27,25 +27,25 @@
       "icon": "FaPaintBrush"
     },
     {
-      "title": "SEO Marketing",
-      "description": "Amélioration du référencement naturel pour plus de visibilité dans les résultats des moteurs",
+      "title": "Deploiement",
+      "description": "deploiment sur des plateforme cloud telque AWS ,FIREBASE,google cloud",
       "icon": "FaBullhorn"
     }
   ],
   "services2": [
     {
       "title": "Développement Mobile",
-      "description": "CRÉATION DE SITES WEB : site vitrine, événementiel, git",
+      "description": "CRÉATION D'application mobile: responisive, événementiel, git",
       "icon": "FaCode"
     },
     {
       "title": "Conception DEVOps",
-      "description": "Logos, newsletters, CV",
+      "description": "gitlab, newsletters, CV",
       "icon": "FaPaintBrush"
     },
     {
-      "title": "CI/C",
-      "description": "Amélioration du référencement naturel pour plus de visibilité dans les résultats des moteurs",
+      "title": "CI/CD",
+      "description": "automatiser l'intregration continue et le deploiement continue avec les outils telque gihtub Action jinkins,gitlab",
       "icon": "FaBullhorn"
     }
   ],
